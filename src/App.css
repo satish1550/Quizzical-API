@@ -1,38 +1,184 @@
 .App {
+  height: 550px;
+  width: 600px;
+  color: #ffffff;
+  /* text-align: center; */
+  margin: auto;
+  margin-top: 6%;
+  margin-left: 30%;
+  position: relative;
+  /* border: 2px solid #293264; */
+}
+
+.container-box {
+  height: 100px;
+  width: 600px;
+}
+
+h1 {
+  letter-spacing: .11em;
+  position: absolute;
+  width: 412px;
+  height: 41px;
+  left: 70px;
+  top: 218px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 37px;
   text-align: center;
+  color: #293264;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  letter-spacing: .04em;
+  position: absolute;
+  width: 318px;
+  height: 19px;
+  left: 117px;
+  top: 266px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 19px;
+  text-align: center;
+  color: #293264;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.start-btn {
+  position: absolute;
+  letter-spacing: .04em;
+  width: 165px;
+  height: 40px;
+  left: 195px;
+  color: #ffffff;
+  top: 314px;
+  background: #293260;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 6px 6px 8px #121630;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.start-btn:hover {
+  box-shadow: inset 6px 6px 8px #000;
+}
+
+.questions {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #293264;
+}
+
+.line {
+  border: .5px solid #dbdef0;
+}
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.options {
+  font-family: 'Inter';
+  /* margin-left: 5px; */
+  margin: auto;
+  margin-top: 3px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px;
+  line-height: 12px;
+  text-align: center;
+  margin-left: 0px;
+  color: #293264;
+  border-radius: 7.94239px;
+  border: 1px;
+  line-height: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.playAgain,
+.checkAnswer {
+  position: absolute;
+  margin-top: 200px;
+  letter-spacing: .04em;
+  width: 165px;
+  height: 40px;
+  left: 450px;
+  color: #ffffff;
+  top: 314px;
+  background: #293260;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: -6px -6px 6px #121630;
+}
+
+.checkAnswer:hover {
+  box-shadow: inset 6px 6px 8px #000;
+}
+
+.playAgain:hover {
+  box-shadow: inset 6px 6px 8px #000;
+}
+
+.footer {
+  display: flex;
+}
+
+.score {
+  color: #293264;
+  margin-left: 60px;
+  letter-spacing: .04em;
+}
+
+.loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loader div {
+  display: inline-block;
+  position: absolute;
+  margin-left: 340px;
+  margin-top: 221px;
+  left: 8px;
+  width: 16px;
+  background: #293264;
+  animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.loader div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+
+.loader div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+
+.loader div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+
+@keyframes loader {
+  0% {
+    top: 8px;
+    height: 64px;
   }
-  to {
-    transform: rotate(360deg);
+
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
   }
 }
