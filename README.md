@@ -1,7 +1,15 @@
-Quizzical App
- 👉🏻 https://melodious-croquembouche-d6ee8c.netlify.app
+# Quizzical App
+https://melodious-croquembouche-d6ee8c.netlify.app
 
-# Getting Started with Create React App
+![image](https://user-images.githubusercontent.com/103049738/210129765-dd4ddf1b-384d-4a1b-bba5-3c0ac248a3d4.png)
+
+![image](https://user-images.githubusercontent.com/103049738/210129768-417aa794-86b4-4f83-b27e-8ad50dc9408b.png)
+
+![image](https://user-images.githubusercontent.com/103049738/210129769-d1082e16-9c29-4ed5-aebe-359e4cacc4d7.png)
+
+
+
+Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
